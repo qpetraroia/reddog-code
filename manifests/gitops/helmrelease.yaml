@@ -1,0 +1,27 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: ui
+  namespace: reddog-retail
+spec:
+  releaseName: ui
+  chart:
+    spec:
+      chart: manifests/gitops/ui
+      sourceRef:
+        kind: GitRepository
+        name: ui
+        namespace: reddog-retail
+
+---
+
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: GitRepository
+metadata:
+  name: ui
+  namespace: reddog-retail
+spec:
+  interval: 1m0s
+  url: https://github.com/qpetraroia/reddog-hybrid-arc
+  ref:
+    branch: master
