@@ -18,7 +18,7 @@ spec:
         dapr.io/enabled: "true"
         dapr.io/app-id: "ui"
         dapr.io/config: "reddog.config"
-        app/version: "v2"
+        app/version: "v4"
     spec:
       containers:
         - name: ui
@@ -46,3 +46,9 @@ spec:
               secretKeyRef:
                   name: branch.config
                   key: accounting_base_url
+          - name: VUE_APP_SITE_TYPE
+            valueFrom:
+              configMapKeyRef:
+                  name: app-config
+                  key: VUE_APP_SITE_TYPE
+

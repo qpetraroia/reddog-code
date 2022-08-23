@@ -4,5 +4,4 @@ metadata:
   name: app-config
   namespace: reddog-retail
 data:
-  app.properties: |
-    VUE_APP_SITE_TYPE=testsite
+  VUE_APP_SITE_TYPE: "testsite"
