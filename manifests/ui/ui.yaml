@@ -46,8 +46,3 @@ spec:
               secretKeyRef:
                   name: branch.config
                   key: accounting_base_url
-          - name: VUE_APP_SITE_TYPE
-            valueFrom:
-              configMapKeyRef:
-                  name: app-config
-                  key: app.properties.VUE_APP_SITE_TYPE
