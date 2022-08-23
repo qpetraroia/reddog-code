@@ -7,7 +7,7 @@ spec:
   releaseName: ui
   chart:
     spec:
-      chart: manifests/gitops/ui
+      chart: manifests/ui
       sourceRef:
         kind: GitRepository
         name: ui

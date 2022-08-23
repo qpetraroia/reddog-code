@@ -18,7 +18,7 @@ spec:
         dapr.io/enabled: "true"
         dapr.io/app-id: "ui"
         dapr.io/config: "reddog.config"
-        checksum/azureconfig: {{ include (print $.Template.BasePath "/config.yaml") . | sha256sum }}
+        app/version: "v1"
     spec:
       containers:
         - name: ui
