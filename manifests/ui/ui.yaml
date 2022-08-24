@@ -18,7 +18,7 @@ spec:
         dapr.io/enabled: "true"
         dapr.io/app-id: "ui"
         dapr.io/config: "reddog.config"
-        app/version: "v9"
+        app/version: "v10"
     spec:
       containers:
         - name: ui
