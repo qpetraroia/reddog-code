@@ -21,7 +21,7 @@ metadata:
   name: ui
   namespace: reddog-retail
 spec:
-  interval: 1m0s
+  interval: 10s
   url: https://github.com/qpetraroia/reddog-hybrid-arc
   ref:
     branch: master
