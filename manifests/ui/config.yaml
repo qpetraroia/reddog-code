@@ -4,4 +4,4 @@ metadata:
   name: app-config
   namespace: reddog-retail
 data:
-  VUE_APP_SITE_TYPE: "hello forrester - v10!"
+  VUE_APP_SITE_TYPE: "hello forrester - v11!"
