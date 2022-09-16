@@ -6,7 +6,7 @@ metadata:
   labels:
     app: ui
 spec:
-  replicas: 4
+  replicas: 3
   selector:
     matchLabels:
       app: ui
@@ -27,7 +27,7 @@ spec:
           imagePullPolicy: Always
           env:
           - name: VUE_APP_SITE_TITLE
-            value: "Red Dog Drug Store - Store"
+            value: "Red Dog - DrugStore"
           - name: VUE_APP_SITE_TYPE
             value: "Pharmacy"
           - name: VUE_APP_IS_CORP
